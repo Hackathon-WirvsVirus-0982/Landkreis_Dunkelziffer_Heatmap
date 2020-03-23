@@ -22,11 +22,10 @@
     <p></p>motivieren empfohlene Sicherheitsvorkehrungen ernst zunehmen.</p><br> 
     <br>        
     <h3>Berechnung</h3>
-    <p>Die Dunkelziffer wird mithilfe der offiziell gemeldeten Daten des Robert-Koch-Instituts</p> 
-    <p>(https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0) und eines epidemiologischen Modells</p> 
-    <p>(https://github.com/Hackathon-WirvsVirus-0982/Landkreis_Dunkelziffer_Heatmap) bestimmt. Die Dunkelziffer wird berechnet aus der Differenz</p> 
-    <p>zwischen den Vorhersagen des epidemiologischen Modells und der aktuell, offiziell gemeldeten Zahl von Infizierten. Annahmen zum epidemiologischen Modell:</p> 
-    <p><Wir implementieren zuerst ein einfaches, standardisiertes epidemiologisches SEIR-Modell, dass die Anzahl von Bürger*innen in den Kategorien “susceptible”,</p> 
+    <p>Die Dunkelziffer wird mithilfe der <a href="(https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0)">offiziell gemeldeten Daten des Robert-Koch-Instituts</a> und <a href="(https://github.com/Hackathon-WirvsVirus-0982/Landkreis_Dunkelziffer_Heatmap)">eines epidemiologischen Modells</a> bestimmt.</p>
+    <p>Die Dunkelziffer wird berechnet aus der Differenz zwischen den Vorhersagen des epidemiologischen Modells und der aktuell, offiziell gemeldeten Zahl von Infizierten.</p>
+    <p>Annahmen zum epidemiologischen Modell:</p> 
+    <p>Wir implementieren zuerst ein einfaches, standardisiertes epidemiologisches SEIR-Modell, dass die Anzahl von Bürger*innen in den Kategorien “susceptible”,</p> 
     <p>“exposed”, “infected” und “recovered” zeitlich vorhersagt. Abschätzung für die Parameter des Modells sind zunächst aus Abschätzungen von COVID-19-Infektionsverläufen</p> 
     <p>aus anderen Länder entnommen. Für jeden Landkreis und jede kreisfreie Städte simulieren wir das Modell mit hilfe der ersten Fallmeldungen des Landkreises bzw. der Stadt.</p> 
     <p>Unser Modell nimmt “normales” Sozialverhalten an und berücksichtigt noch nicht die aktuellen Maßnahmen zum “social distancing”.</p>
