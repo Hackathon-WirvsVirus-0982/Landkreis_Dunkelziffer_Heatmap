@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="font.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+</head>
+<body>
+    <h2>Info</h2>
+    <h3>Inspiration</h3>
+    <p>Wir möchten mithelfen, die Infektionsketten zu stoppen. Vielen Menschen ist offenbar noch nicht bewusst, dass die Dunkelziffer der Infizierten groß ist.</p>   
+    <p>Daher bewegen sie sich noch immer wie im normalen Alltag. Infizierte Personen können aber auch ohne Symptome und positiven Test bereits ansteckend sein.</p> 
+    <p></p>Diese Personen sind eine große Gefahr. Um diese Menschen zu sensibilisieren, möchten wir die geschätzte Dunkelziffer aufzeigen und anhand von Zahlen greifbar machen.</p>  
+    <p></p>Zusätzlich kann dieser Ansatz Entscheidungsträger*innen helfen, Maßnahmen geografisch zu begrenzen und so die Akzeptanz in der Bevölkerung für diese Maßnahmen zu steigern.</p>  
+    <br>
+    <h3>Zweck</h3>
+    <p></p>Unsere Berechnung soll Licht ins Dunkle bringen. Sie soll Auskunft über die Anzahl der infizierten Bürger*innen, die nicht auf COVID-19 getestet wurden -</p>
+    <p></p>die sogenannte Dunkelziffer - geben. Wir berechnen die Dunkelziffer für die deutschen Landkreise und kreisfreien Städte und visualisieren den Output mithilfe einer Heatmap.</p> 
+    <p></p>Zurzeit sehen wir unsere Berechnungen als pädagogisches Hilfsmittel Bürger*innen über die Wichtigkeit von Präventionsmaßnahmen gegen eine COVID-19-Infektion zu überzeugen.</p>
+    <p></p>Durch die Angaben auf Landkreisebene, dem eigenen persönlichen Umfeld, wollen wir das abstrakte Konzept der Ausbreitung von Krankheiten greifbarer machen und so Bürger*innen</p> 
+    <p></p>motivieren empfohlene Sicherheitsvorkehrungen ernst zunehmen.</p><br> 
+    <br>        
+    <h3>Berechnung</h3>
+    <p>Die Dunkelziffer wird mithilfe der offiziell gemeldeten Daten des Robert-Koch-Instituts</p> 
+    <p>(https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0) und eines epidemiologischen Modells</p> 
+    <p>(https://github.com/Hackathon-WirvsVirus-0982/Landkreis_Dunkelziffer_Heatmap) bestimmt. Die Dunkelziffer wird berechnet aus der Differenz</p> 
+    <p>zwischen den Vorhersagen des epidemiologischen Modells und der aktuell, offiziell gemeldeten Zahl von Infizierten. Annahmen zum epidemiologischen Modell:</p> 
+    <p><Wir implementieren zuerst ein einfaches, standardisiertes epidemiologisches SEIR-Modell, dass die Anzahl von Bürger*innen in den Kategorien “susceptible”,</p> 
+    <p>“exposed”, “infected” und “recovered” zeitlich vorhersagt. Abschätzung für die Parameter des Modells sind zunächst aus Abschätzungen von COVID-19-Infektionsverläufen</p> 
+    <p>aus anderen Länder entnommen. Für jeden Landkreis und jede kreisfreie Städte simulieren wir das Modell mit hilfe der ersten Fallmeldungen des Landkreises bzw. der Stadt.</p> 
+    <p>Unser Modell nimmt “normales” Sozialverhalten an und berücksichtigt noch nicht die aktuellen Maßnahmen zum “social distancing”.</p>
+</body>
+</html>
